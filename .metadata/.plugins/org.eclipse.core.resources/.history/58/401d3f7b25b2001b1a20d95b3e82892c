@@ -1,0 +1,17 @@
+package hello_world;
+
+public class Moyenne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int nb1;
+		int nb2;
+		
+		
+		
+		
+		
+	}
+
+}

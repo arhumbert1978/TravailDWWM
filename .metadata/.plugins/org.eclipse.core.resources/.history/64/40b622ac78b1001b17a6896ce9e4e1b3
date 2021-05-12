@@ -1,0 +1,18 @@
+package hello_world;
+import java.util.Scanner;
+public class La_bicyclette {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String reponse;
+		
+		System.out.println("Est-ce qu'il fait beau?");
+		Scanner sc = new Scanner(System.in);
+		reponse = sc.nextLine();
+		
+		
+		
+	}
+
+}

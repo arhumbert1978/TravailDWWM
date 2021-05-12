@@ -1,0 +1,46 @@
+package hello_world;
+import java.util.Scanner;
+public class Bissextile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+String annee;
+
+//Boolean test2=true;
+
+Scanner sc2= new Scanner(System.in);
+
+
+	System.out.println("Quelle année voulez-vous testez?");
+	Scanner sc= new Scanner (System.in);
+	
+	annee = sc.nextLine();
+	Integer test = Integer.valueOf(annee);
+	
+	if (test % 400 ==0)
+	{
+		System.out.println("L'année est bissextile");
+	}
+	else if (test % 100 ==0)
+	{
+	
+		System.out.println("L'année n'est pas bissextile");;
+	}	
+	
+	else if(test % 4==0)
+	{
+		System.out.println("L'année est bissextile");	
+	}
+
+	//if (test2=true) {
+		//System.out.println("L'année est bissextile");
+	//}
+	//if (test2=false) {
+		//System.out.println("L'année n'est pas bissextile");
+	//}
+	
+	
+	}
+
+}

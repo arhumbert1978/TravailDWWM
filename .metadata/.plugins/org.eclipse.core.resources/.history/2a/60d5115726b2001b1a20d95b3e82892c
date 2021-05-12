@@ -1,0 +1,25 @@
+package hello_world;
+import java.util.Scanner;
+
+public class Moyenne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int nb1;
+		int nb2;
+		int pos;
+		
+		String saisie;
+		
+		System.out.println("Veuillez saisir dux nombres sépareés par un espace");
+		Scanner sc= new Scanner(System.in);
+		
+		saisie= sc.nextLine();
+		pos=saisie.indexOf(" ");
+		System.out.println(pos);
+	
+	
+	}
+
+}

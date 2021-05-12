@@ -1,0 +1,42 @@
+package hello_world;
+import java.util.Scanner;
+public class Bissextile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String rep;
+String annee;
+rep="o";
+
+
+Scanner sc2= new Scanner(System.in);
+
+do {
+	System.out.println("Quelle année voulez-vous testez?");
+	Scanner sc= new Scanner (System.in);
+	
+	annee = sc.nextLine();
+	Integer test = Integer.valueOf(annee);
+	
+	if (test % 4 ==0)
+	{
+	
+	if (test % 100 ==0)
+	{
+		
+		System.out.println("l'année,"+test+",est une année bissextiler!");
+	}
+	else if(test % 400==0)
+	{
+		System.out.println("L'année, "+test+",est une année bissextile!");
+	}
+	else
+	System.out.println("The year, "+test+",is not a leap year!");
+	
+	}
+	
+	
+} while (rep.equals("o"))
+	}
+
+}
