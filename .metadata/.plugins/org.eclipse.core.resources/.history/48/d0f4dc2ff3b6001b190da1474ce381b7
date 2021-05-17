@@ -1,0 +1,69 @@
+package hello_world;
+import java.util.*;
+
+public class ConvertisseurTemperature {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char mode=' ';
+		String test="";
+		String rep;
+		
+		do
+		{
+		System.out.println("CONVERSTISSEUR DEGRÉ CELCIUS ET DEGRÉ FAHREINHEIT");
+		System.out.println("----------------------------------------------------------");
+		Scanner sc = new Scanner(System.in);
+		  
+		System.out.println("Choissez le Mode de conversion !");
+		
+		System.out.println("1 - Convertisseur Celcius --> Fahrenheit ");
+		System.out.println("2 - Convertisseur  Fahrenheit --> Celcius ");
+		
+		test=sc.nextLine();
+		
+		mode=test.charAt(0);
+		
+		//System.out.println(test.length());
+		
+		if (mode != '1' && mode != '2' && test.length()>1 )
+		{
+			
+			System.out.println("Mode inconnu !!!!! veuillez réitérer l'opération ");
+			
+		}
+		
+		}while(mode != '1' && mode !='2'  || test.length()>1);
+		
+		
+		if (mode=='1') 
+		{
+		
+			System.out.println("Veuillez saisir la température en celcius à convertir: ");
+			Scanner sc2=new Scanner(System.in);
+			double a = sc2.nextDouble();
+			
+			double s = a*(9/5)+32;
+			Math.round(s);
+			System.out.println("Température équivalente en Fahrenheit " + s + "F°");
+			
+		}else
+		{
+		
+			System.out.println("Veuillez saisir la température en Fahrenheit à convertir: ");
+			Scanner sc3=new Scanner(System.in);
+			double b = sc3.nextDouble();
+			
+			double s2 = (b-32)*5/9;
+			Math.round(s2);
+			
+			System.out.println("Température équivalente en Celcius " + s2 + "C°");
+			
+		}
+		
+	}
+		
+		
+	
+}
