@@ -4,7 +4,7 @@ public class jeux_012
 {
 
 	public static void main(String[] args) 
-	//{
+	{
 		// TODO Auto-generated method stub
 
 		int compt=0;
@@ -91,4 +91,4 @@ public class jeux_012
 		
 	}
 
-//}//
+}

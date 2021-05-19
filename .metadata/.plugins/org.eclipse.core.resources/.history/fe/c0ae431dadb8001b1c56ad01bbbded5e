@@ -9,14 +9,6 @@ public class Premiers {
 		//test de comparaisons
 		
 		//blablablablabla
-		
-		long nombre;
-		long div=2;
-		
-		String continuer="";
-		
-		
-		
 	}
 
 }
