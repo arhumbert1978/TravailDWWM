@@ -4,7 +4,7 @@ public class jeux_012
 {
 
 	public static void main(String[] args) 
-	//{
+	{
 		// TODO Auto-generated method stub
 
 		int compt=0;
@@ -15,12 +15,12 @@ public class jeux_012
 		int resultat;
 		
 		Random ran= new Random();
-		
+		Scanner sc = new Scanner(System.in);	
 		
 		do {
 			
 			System.out.println("Bonjour veuillez saisir le chiffre 0,1 ou 2.");
-			Scanner sc = new Scanner(System.in);
+	
 			nbutil = sc.nextInt();
 			
 			nbordi=ran.nextInt(3);
@@ -74,7 +74,7 @@ public class jeux_012
 			}
 			
 			
-		} while (compt == 10 || nbutil < 0);
+		
 		
 		if (nbutil>nbordi)
 		{
@@ -88,7 +88,7 @@ public class jeux_012
 			
 		}
 		
-		
+		} while (compt < 10 && nbutil < 0);
 	}
 
-//}//
+}
