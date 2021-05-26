@@ -1,0 +1,39 @@
+package hello_world;
+import java.util.*;
+public class taille_chaine {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		String phrase;
+		String recherche;
+		//int pos;
+		int compt=0;
+		Scanner sc = new Scanner(System.in);
+		Scanner sc2 = new Scanner(System.in);
+		
+		System.out.println("Bonjour, veuillez saisir une phrase?");
+		phrase= sc.nextLine();
+		
+		System.out.println("Veuillez saisir le caractére recherché.");
+		recherche = sc2.nextLine();
+		
+		for (int i = 0; i < phrase.length(); i++) 
+		{
+		
+			if (phrase.indexOf(i)==recherche.indexOf(0))
+			{
+			
+				compt++;
+				
+			}
+			
+			
+		}
+		
+		System.out.println("Il y a "+compt+" ittération "+phrase+".");
+		
+	}
+
+}

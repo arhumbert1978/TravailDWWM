@@ -1,0 +1,56 @@
+package covertisseur_km_miles;
+import java.util.*;
+public class ConvertisseurKmMi {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		System.out.println("Programme de conversion Kilomètres <-> Miles.");
+		System.out.println("---------------------------------------------");
+		
+		String saisie="";
+		double distance;
+		
+		String[] montab;
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Veuillez saisir une distance à convertir avec un un espace et l'unité km et mi précédé d'un espace : ");
+		saisie=sc.nextLine();
+		
+		montab=saisie.split(" ");
+		distance = Double.parseDouble(montab[0]);
+		String unite=montab[1];
+		
+		
+		/*
+		 * for (int i = 0; i < montab.length; i++) {
+		 * 
+		 * System.out.print(montab[i]+" ");
+		 * 
+		 * }
+		 */
+			//for(String el : montab )
+			//{
+				//System.out.print(el+" ");
+			//}
+			
+			if (unite.equals("km") ) 
+			{
+			
+				double res=distance/1.0609344;
+				System.out.println("Cela donne "+res+" Miles");
+				
+			}else 
+			{
+			
+				double res2= distance*1.609344;
+				System.out.println("Cela donne "+res2+" Kilométres");
+				
+				
+			}
+		}
+	
+
+}

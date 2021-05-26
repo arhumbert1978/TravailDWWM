@@ -1,0 +1,10 @@
+package hello_world;
+
+public class jeux_012_version_switch_case_fonctionel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
