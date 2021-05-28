@@ -1,0 +1,69 @@
+import java.util.*;
+
+import hello_world.ClearScreen;
+
+
+public class Tri_tab1 {
+
+	public static void main(String[] args) 
+	{
+
+		int [] montab=new int [10];
+		Random alea=new Random();
+		int temp;
+		int num = montab.length;
+		
+		int temp2;
+		
+		
+		
+		for (int i = 0; i < montab.length; i++) 
+		{
+		
+			
+			montab[i]=alea.nextInt(101);
+			
+			
+		}
+		
+		for (int i = 0; i < montab.length; i++) 
+		{
+		
+			
+		System.out.print(montab[i]+" ");
+			
+			
+		}
+		
+	for (int i = 0; i < num-1; i++) 
+	{
+	
+	
+		
+		for (int j = 0; j <i; j++) 
+		{
+		
+			if (montab[j+1]<montab[j]) 
+			{
+			
+				temp=montab[j];
+				montab[j+1]=montab[i];
+				montab[i]=temp;
+				
+			}
+			
+		}
+		
+	}	
+	
+	for (int i = 0; i < montab.length; i++) 
+	{
+	
+		
+	System.out.println(montab[i]+" ");
+		
+		
+	}	
+	}
+
+}

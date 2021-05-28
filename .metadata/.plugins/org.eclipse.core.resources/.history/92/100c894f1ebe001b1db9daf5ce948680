@@ -1,0 +1,30 @@
+package hello_world;
+
+import java.util.Arrays;
+import java.util.*;
+
+public class Tri_tableau {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			
+		int [] Montab ={20, 10, 56, 32, 1, 240, 6, 244, 62, 87, 15};
+		
+		for (int i = 0; i < Montab.length; i++) 
+		{
+		
+			System.out.println(Montab[i]);
+			
+		}
+		Arrays.sort(Montab);
+		
+		for (int i = 0; i < Montab.length; i++) 
+		{
+		
+			System.out.println(Montab[i]);
+			
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+package hello_world;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Alphabet {
+
+	public static void main(String[] args) 
+	{
+
+	char alpha='a';
+	String phrase;	
+	//String repl;
+	
+	Scanner sc = new Scanner(System.in);
+	int compteur=0;
+	
+	System.out.println("Veuillez saisir une phrase SVP");
+	
+	phrase=sc.nextLine();
+	
+	phrase=phrase.replace('é', 'e');
+	phrase=phrase.replace('è', 'e');
+	phrase=phrase.replace('ê', 'e');
+	phrase=phrase.replace('ë', 'e');
+	phrase=phrase.replace('à', 'a');
+	phrase=phrase.replace('â', 'a');
+	phrase=phrase.replace('ä', 'a');
+	phrase=phrase.replace('à', 'a');
+	phrase=phrase.replace('ô', 'o');
+	phrase=phrase.replace('ö', 'o');
+	phrase=phrase.replace('î', 'i');
+	phrase=phrase.replace('ï', 'i');
+
+	
+	
+	System.out.println(phrase);
+	
+	for (int i = 1; i < 27; i++) 
+	{
+		
+		
+		
+		for (int j = 0; j < phrase.length(); j++) 
+		{
+		
+			if (phrase.charAt(j)==alpha)
+			{
+			
+				compteur++;
+				
+			}
+		
+		
+		}
+
+		System.out.println("Il y a "+compteur+" occurences de "+alpha+" dans la phrase.");
+		alpha++;
+		compteur=0;
+	
+	}
+sc.close();
+}
+}

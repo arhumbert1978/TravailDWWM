@@ -1,0 +1,40 @@
+package hello_world;
+
+import java.util.*;
+
+
+public class ClearScreen{
+    public  static void main (String [] args){
+    	
+    	Scanner sc=new Scanner(System.in);
+    	String rep;
+        System.out.println("Hello World");
+        System.out.println("Voulez-vous effacer la console?");
+        rep=sc.nextLine();
+        
+        
+        if (rep=="o"){
+        ClearConsole();
+        }
+        
+    }
+
+    public static void ClearConsole(){
+        try{
+            String operatingSystem = System.getProperty("os.name") ;//Check the current operating system
+              
+            if(operatingSystem.contains("Windows")){        
+                ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls");
+                Process startProcess = pb.inheritIO().start();
+                startProcess.waitFor();
+            } else {
+                ProcessBuilder pb = new ProcessBuilder("clear");
+                Process startProcess = pb.inheritIO().start();
+
+                startProcess.waitFor();
+            } 
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
+}

@@ -12,6 +12,7 @@ rep="o";
 Scanner sc2= new Scanner(System.in);
 
 do {
+	
 	System.out.println("Quelle année voulez-vous testez?");
 	Scanner sc = new Scanner(System.in);
 
@@ -38,8 +39,28 @@ do {
 
 	System.out.println("Voulez-vous continuer?");
 	rep = sc2.nextLine().toLowerCase();
-
+	ClearConsole();
+		
 } while (rep.equals("o"));
 	}
 
+
+public static void ClearConsole(){
+    try{
+        String operatingSystem = System.getProperty("os.name") ;//Check the current operating system
+          
+        if(operatingSystem.contains("Windows")){        
+            ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls");
+            Process startProcess = pb.inheritIO().start();
+            startProcess.waitFor();
+        } else {
+            ProcessBuilder pb = new ProcessBuilder("clear");
+            Process startProcess = pb.inheritIO().start();
+
+            startProcess.waitFor();
+        } 
+    }catch(Exception e){
+        System.out.println();
+    }
+}
 }
