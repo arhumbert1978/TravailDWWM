@@ -20,7 +20,7 @@ public class Alphabet {
 	System.out.println("Veuillez saisir une phrase SVP");
 	
 	phrase=sc.nextLine();
-	} while (phrase.length()<120 &&  );
+	} while (phrase.length()<120);
 	phrase=phrase.replace('é', 'e');
 	phrase=phrase.replace('è', 'e');
 	phrase=phrase.replace('ê', 'e');
