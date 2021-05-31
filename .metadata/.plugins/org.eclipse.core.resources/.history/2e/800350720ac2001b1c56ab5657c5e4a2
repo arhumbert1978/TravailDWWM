@@ -11,8 +11,8 @@ public class Alphabet {
 	char alpha='a';
 	String phrase;	
 	//String repl;
-	int Posfin;
-	String chaine;	
+	
+		
 	
 	Scanner sc = new Scanner(System.in);
 	int compteur=0;
@@ -20,15 +20,7 @@ public class Alphabet {
 	System.out.println("Veuillez saisir une phrase SVP");
 	
 	phrase=sc.nextLine();
-	Posfin=phrase.length();
-	chaine =phrase.substring(Posfin-1, Posfin);
-	} while (phrase.length()<120 && chaine.equals(".") );
-	
-	
-	
-	
-	
-	
+	} while (phrase.length()<120 &&  );
 	phrase=phrase.replace('é', 'e');
 	phrase=phrase.replace('è', 'e');
 	phrase=phrase.replace('ê', 'e');
