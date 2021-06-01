@@ -22,7 +22,7 @@ public class Alphabet {
 	phrase=sc.nextLine();
 	Posfin=phrase.length();
 	chaine =phrase.substring(Posfin-1, Posfin);
-	} while (phrase.length()<120 && chaine.equals(".") );
+	} while (phrase.length()<120 && chaine.equals("."));
 	
 	
 	

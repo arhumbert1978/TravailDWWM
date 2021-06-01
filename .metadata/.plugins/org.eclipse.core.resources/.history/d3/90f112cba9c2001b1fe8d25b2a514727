@@ -1,0 +1,56 @@
+package Pal1drome;
+import java.util.*;
+
+public class Pal1drome_test {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		String mot;
+		Scanner sc = new Scanner(System.in);
+		boolean test=false;
+				
+		
+		int taille;
+		int tailledec;
+		
+		
+		System.out.println("Nous allons tester un mot pour voire si il est un palindrome");
+		System.out.println("------------------------------------------------------------");
+		System.out.println("----------Veuillez saisir un mot s'il vous plait?-----------");
+		
+		mot=sc.nextLine();
+		
+		taille=mot.length();
+		tailledec = mot.length();
+		
+		
+		for (int i = 0; i < taille; i++) 
+		{
+		
+			if (mot.indexOf(i) == mot.indexOf(tailledec)) 
+			{
+			
+				test=true;
+				//System.out.print("t");
+				System.out.println(mot.indexOf(tailledec));
+			}
+			tailledec--;
+			System.out.println(mot.indexOf(taille));
+		}
+		
+		
+		if (test==false)
+		{
+		
+			
+			System.out.println("Le mot saisi est un palindrome");
+			
+		}else {
+			System.out.println("Le mot saisi n'est pas un palindrome");
+		}
+		
+	}
+
+}
