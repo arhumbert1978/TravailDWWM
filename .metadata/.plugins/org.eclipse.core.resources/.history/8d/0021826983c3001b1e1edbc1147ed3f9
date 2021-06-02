@@ -1,5 +1,5 @@
 
-public class taille_chaine {
+public class Tri_bulle {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
